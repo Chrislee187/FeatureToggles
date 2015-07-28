@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FeatureToggles;
 
 namespace TestAppLib
 {
@@ -10,9 +11,10 @@ namespace TestAppLib
     {
         public void DeadEnd()
         {
-            bool val;
-            AppContext.TryGetSwitch("MyFeature1", out val);
-            Console.WriteLine($"DeadEnd::MyFeature1 = {val}");
+            for (int i = 1; i <= 5; i++)
+            {
+                Console.WriteLine($"'MyFeature{i}' = {Features.State($"MyFeature{i}")}");
+            }
         }
 
         public void GoDeeper()

@@ -45,6 +45,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\FeatureToggles\FeatureToggles.csproj">
+      <Project>{555BC141-8275-42BB-9310-37C44D0115AB}</Project>
+      <Name>FeatureToggles</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TestAppLibDeeper\TestAppLibDeeper.csproj">
       <Project>{bf6b5329-580e-4dea-863e-97a316b3a235}</Project>
       <Name>TestAppLibDeeper</Name>

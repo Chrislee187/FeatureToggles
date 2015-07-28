@@ -52,12 +52,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FeatureSwitches\FeatureSwitches.csproj">
-      <Project>{555bc141-8275-42bb-9310-37c44d0115ab}</Project>
-      <Name>FeatureSwitches</Name>
+    <ProjectReference Include="..\FeatureToggles\FeatureToggles.csproj">
+      <Project>{555BC141-8275-42BB-9310-37C44D0115AB}</Project>
+      <Name>FeatureToggles</Name>
     </ProjectReference>
-    <ProjectReference Include="..\FeatureSwitches\TestAppLib\TestAppLib.csproj">
-      <Project>{951ccca3-d5d8-42cc-8ba6-e5495ae73e0d}</Project>
+    <ProjectReference Include="..\TestAppLib\TestAppLib.csproj">
+      <Project>{951CCCA3-D5D8-42CC-8BA6-E5495AE73E0D}</Project>
       <Name>TestAppLib</Name>
     </ProjectReference>
   </ItemGroup>

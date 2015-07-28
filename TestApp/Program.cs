@@ -5,7 +5,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using FeatureSwitches;
+using FeatureToggles;
 using TestAppLib;
 
 namespace TestApp
@@ -14,33 +14,19 @@ namespace TestApp
     {
         static void Main(string[] args)
         {
-//            Console.WriteLine("AppContext switches used directly");
-//            Spike();
-            Console.WriteLine("AppContext switches used via Switches class");
-            Spike2();
+            Console.WriteLine("FeatureToggles at .config file level");
 
-            Console.ReadLine();
-        }
+            for (int i = 1; i <=5 ; i++)
+            {
+                Console.WriteLine($"'MyFeature{i}' = {Features.State($"MyFeature{i}")}");
+            }
 
-        private static void Spike()
-        {
-            AppContext.SetSwitch("MyFeature1", true);
-
-            bool val;
-            AppContext.TryGetSwitch("MyFeature1", out val);
-            Console.WriteLine($"Program::MyFeature1 = {val}");
+            Console.WriteLine("FeatureToggle context maintained through child components");
             var x = new TestAppLibClass();
             x.DeadEnd();
             x.GoDeeper();
-        }
 
-        private static void Spike2()
-        {
-            for (int i = 1; i <=5 ; i++)
-            {
-                Console.WriteLine($"Switch 'MyFeature{i}' = {Switches.State($"MyFeature{i}")}");
-            }
-            
+            Console.ReadLine();
         }
     }
 }

@@ -3,13 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeatureSwitches", "FeatureSwitches.csproj", "{555BC141-8275-42BB-9310-37C44D0115AB}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "..\TestApp\TestApp.csproj", "{1581BF2E-35FF-43DB-829B-439C1B9C7569}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "TestApp\TestApp.csproj", "{1581BF2E-35FF-43DB-829B-439C1B9C7569}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAppLib", "TestAppLib\TestAppLib.csproj", "{951CCCA3-D5D8-42CC-8BA6-E5495AE73E0D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAppLibDeeper", "TestAppLibDeeper\TestAppLibDeeper.csproj", "{BF6B5329-580E-4DEA-863E-97A316B3A235}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeatureToggles", "FeatureToggles\FeatureToggles.csproj", "{555BC141-8275-42BB-9310-37C44D0115AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E348AFC5-1706-4235-9089-EE114ED3A53F}"
+	ProjectSection(SolutionItems) = preProject
+		README.TXT = README.TXT
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +22,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{555BC141-8275-42BB-9310-37C44D0115AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{555BC141-8275-42BB-9310-37C44D0115AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{555BC141-8275-42BB-9310-37C44D0115AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{555BC141-8275-42BB-9310-37C44D0115AB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1581BF2E-35FF-43DB-829B-439C1B9C7569}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1581BF2E-35FF-43DB-829B-439C1B9C7569}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1581BF2E-35FF-43DB-829B-439C1B9C7569}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +34,10 @@ Global
 		{BF6B5329-580E-4DEA-863E-97A316B3A235}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF6B5329-580E-4DEA-863E-97A316B3A235}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF6B5329-580E-4DEA-863E-97A316B3A235}.Release|Any CPU.Build.0 = Release|Any CPU
+		{555BC141-8275-42BB-9310-37C44D0115AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{555BC141-8275-42BB-9310-37C44D0115AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{555BC141-8275-42BB-9310-37C44D0115AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{555BC141-8275-42BB-9310-37C44D0115AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

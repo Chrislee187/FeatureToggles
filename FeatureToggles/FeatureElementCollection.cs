@@ -1,7 +1,6 @@
-using System;
 using System.Configuration;
 
-namespace FeatureSwitches
+namespace FeatureToggles
 {
     public class FeatureElementCollection : ConfigurationElementCollection
     {

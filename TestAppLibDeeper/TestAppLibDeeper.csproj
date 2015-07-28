@@ -44,6 +44,12 @@
     <Compile Include="TestAppLibDeeper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FeatureToggles\FeatureToggles.csproj">
+      <Project>{555BC141-8275-42BB-9310-37C44D0115AB}</Project>
+      <Name>FeatureToggles</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
