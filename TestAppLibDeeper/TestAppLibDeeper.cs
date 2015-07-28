@@ -13,7 +13,7 @@ namespace TestAppLibDeeper
         {
             for (int i = 1; i <= 5; i++)
             {
-                Console.WriteLine($"'MyFeature{i}' = {Features.State($"MyFeature{i}")}");
+                Console.WriteLine($"'TestAppLibDeeper.DeadEnd:MyFeature{i}' = {Features.State($"MyFeature{i}")}");
             }
         }
     }

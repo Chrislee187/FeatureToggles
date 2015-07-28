@@ -26,6 +26,13 @@ namespace TestApp
             x.DeadEnd();
             x.GoDeeper();
 
+            Console.WriteLine("FeatureToggle List");
+
+            foreach (var kvp in Features.List())
+            {
+                Console.WriteLine($"{kvp.Key} = {kvp.Value}");
+            }
+
             Console.ReadLine();
         }
     }

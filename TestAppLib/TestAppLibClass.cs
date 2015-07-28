@@ -13,7 +13,7 @@ namespace TestAppLib
         {
             for (int i = 1; i <= 5; i++)
             {
-                Console.WriteLine($"'MyFeature{i}' = {Features.State($"MyFeature{i}")}");
+                Console.WriteLine($"'TestAppLibClass.DeadEnd:MyFeature{i}' = {Features.State($"MyFeature{i}")}");
             }
         }
 

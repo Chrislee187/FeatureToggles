@@ -13,7 +13,10 @@ Add the following to the <configSection> of your app/web.config
 
 You may then add the following to your <configuration> section
 
-  <features names="MyFeature1, MyFeature2, MyFeature3">
+  <features activate="MyFeature1, MyFeature2, MyFeature3">
     <feature name="MyFeature3" activated="false"/>
     <feature name="MyFeature4" activated="true"/>
   </features>
+
+Toggles in the 'activate' attribute are set to true.
+Toggles for individual feature elements can be used as an alternative mechanism.

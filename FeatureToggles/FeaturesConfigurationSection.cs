@@ -4,20 +4,33 @@ namespace FeatureToggles
 {
     public class FeaturesConfigurationSection : ConfigurationSection
     {
-        [ConfigurationProperty("names", DefaultValue = "", IsRequired = false)]
+        [ConfigurationProperty("activate", DefaultValue = "", IsRequired = false)]
         public string Names
         {
             get
             {
-                return this["names"].ToString();
+                return this["activate"].ToString();
             }
             set
             {
-                this["names"] = value;
+                this["activate"] = value;
             }
         }
 
-        [ConfigurationProperty("", IsDefaultCollection = true)]
+        [ConfigurationProperty("allow-overrides", DefaultValue = "false", IsRequired = false)]
+        public bool AllowOverrides
+        {
+            get
+            {
+                return (bool) this["allow-overrides"];
+            }
+            set
+            {
+                this["allow-overrides"] = value;
+            }
+        }
+
+        [ConfigurationProperty("", IsDefaultCollection = true, IsRequired = false)]
         public FeatureElementCollection Features
         {
             get
@@ -29,7 +42,6 @@ namespace FeatureToggles
                 this[""] = value;
             }
         }
-
 
     }
 }
