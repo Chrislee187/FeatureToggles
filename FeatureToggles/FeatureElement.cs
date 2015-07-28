@@ -5,7 +5,7 @@ namespace FeatureToggles
     public class FeatureElement : ConfigurationElement
     {
         [ConfigurationProperty("name", IsRequired = true, IsKey = true)]
-        public string name
+        public string Name
         {
             get
             {
@@ -18,7 +18,7 @@ namespace FeatureToggles
         }
 
         [ConfigurationProperty("activated", IsRequired = true)]
-        public bool activated
+        public bool Activated
         {
             get
             {
