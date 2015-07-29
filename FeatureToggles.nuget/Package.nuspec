@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>FeatureToggles</id>
+    <version>1.0.1</version>
+    <title>FeatureToggles</title>
+    <authors>Chris Lee</authors>
+    <owners></owners>
+    <description>
+      A very simple FeatureToggles (http://martinfowler.com/bliki/FeatureToggle.html) implementation that automatically reads your feature flags from the app/web.config.
+
+      Access your flags with Features.State(toggleName) or Features.List() for a dictionary of all flags.
+
+      NOTE: Requires NET4.6 as it uses the new AppContext object behind the scenes.
+    </description>
+    <releaseNotes>
+    </releaseNotes>
+    <summary>
+    </summary>
+    <language>en-US</language>
+<!--    <projectUrl>https://nuget.org/packages/FeatureToggles.nuget</projectUrl>-->
+<!--    <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>-->
+<!--    <requireLicenseAcceptance>false</requireLicenseAcceptance>-->
+<!--    <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>-->
+    <copyright>Copyright 2015</copyright>
+    <tags>FeatureToggles FeatureSwitches FeatureFlags</tags>
+  </metadata>
+  <files>
+    <file src="content\" target="content" />
+    <file src="lib\" target="lib" />
+  </files>
+</package>

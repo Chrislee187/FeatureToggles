@@ -53,7 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FeatureToggles\FeatureToggles.csproj">
-      <Project>{555BC141-8275-42BB-9310-37C44D0115AB}</Project>
+      <Project>{555bc141-8275-42bb-9310-37c44d0115ab}</Project>
       <Name>FeatureToggles</Name>
     </ProjectReference>
     <ProjectReference Include="..\TestAppLib\TestAppLib.csproj">
