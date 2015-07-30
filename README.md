@@ -1,5 +1,14 @@
 Very simple Feature Toggles (http://martinfowler.com/bliki/FeatureToggle.html) implementation using the AppContext class that comes with .NET 4.6 and greater.
 
+  use 
+
+  Features.State("MyFeature1") to retrieve flag state or
+  
+  Features.List() to retrieve all flags and state.
+
+Features stored in app/web.config, example below but doesn't show up on github for some reason
+
+
 Add the following to the your app/web.config
 	<configuration>
 		<configSection> 
@@ -22,10 +31,3 @@ Toggles in the 'activate' attribute are set to true.
 Toggles for individual feature elements can be used as an alternative mechanism.
 
 When allow-overrides is "false" a ConfigurationErrorException is thrown if the same feature toggle is set twice
-
-  use 
-
-  Features.State("MyFeature1") to retrieve flag state or
-  
-  Features.List() to retrieve all flags and state.
-
