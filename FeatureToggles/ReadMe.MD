@@ -22,3 +22,7 @@ Toggles in the 'activate' attribute are set to true.
 Toggles for individual feature elements can be used as an alternative mechanism.
 
 When allow-overrides is "false" a ConfigurationErrorException is thrown if the same feature toggle is set twice
+
+  use 
+  Features.State("MyFeature1") to retrieve flag state or
+  Features.List() to retrieve all flags and state.
