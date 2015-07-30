@@ -11,10 +11,10 @@ Add the following to the <configSection> of your app/web.config
           requirePermission="false"
     />
 
-You may then add the following to your <configuration> section
+You may then add the following;
 
   <features activate="MyFeature1, MyFeature2, MyFeature3", allow-overrides="true">
-    <feature name="MyFeature3" activated="false"/> <!-- allow-overrides must be true or this will throw an exception -->
+    <feature name="MyFeature3" activated="false"/>
     <feature name="MyFeature4" activated="true"/>
   </features>
 
