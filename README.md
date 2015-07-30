@@ -6,10 +6,7 @@ Very simple Feature Toggles (http://martinfowler.com/bliki/FeatureToggle.html) i
   
   Features.List() to retrieve all flags and state.
 
-Features stored in app/web.config, example below but doesn't show up on github for some reason
-
-Add the following to the your app/web.config
-
+Features stored in app/web.config, example below
 	<configuration>
 		<configSection> 
 			<section name="features"
