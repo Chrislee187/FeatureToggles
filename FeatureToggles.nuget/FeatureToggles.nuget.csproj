@@ -73,7 +73,7 @@
        Other similar extension points exist, see Microsoft.Common.targets.-->
   <Target Name="BeforeBuild">
 	<Message Text="NOTE: Using BeforeBuild target of FeatureToggles.nuget.csproj file to copy solution files to nuget project folders..." Importance="High" />
-    <Copy SourceFiles="..\FeatureToggles\bin\Debug\FeatureToggles.dll" DestinationFolder="lib\net46">
+    <Copy SourceFiles="..\FeatureToggles\bin\Debug\FeatureToggles.dll" DestinationFolder="lib">
     </Copy>
   </Target>
   <Target Name="AfterBuild">
