@@ -12,7 +12,6 @@ Add the following to the your app/web.config
 				requirePermission="false"
 			/>
 		</configSection> 
-
 		<features activate="MyFeature1, MyFeature2, MyFeature3", allow-overrides="true">
 			<feature name="MyFeature3" activated="false"/>
 			<feature name="MyFeature4" activated="true"/>
