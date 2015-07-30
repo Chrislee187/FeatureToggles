@@ -20,8 +20,8 @@
     <language>en-US</language>
     <projectUrl>https://github.com/Chrislee187/FeatureToggles</projectUrl>
 <!--    <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>-->
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
+<!--    <requireLicenseAcceptance>false</requireLicenseAcceptance>-->
+<!--    <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>-->
     <copyright>Copyright 2015</copyright>
     <tags>FeatureToggles FeatureSwitches FeatureFlags</tags>
   </metadata>
