@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>FeatureToggles</id>
-    <version>1.0.0</version>
+    <version>1.0.2</version>
     <title>FeatureToggles</title>
     <authors>Chris Lee</authors>
     <owners></owners>
